@@ -6,7 +6,7 @@
 // Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand
 // for a hint.
 
-
+//注意一个引用的作用域从声明的地方开始一直持续到最后一次使用为止。
 fn main() {
     let mut x = 100;
     let y = &mut x;
