@@ -44,6 +44,31 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        let st = String::new("John");
+        let p = Person{name:st,age:30}; 
+        if s.len() == 0
+        {
+            return default();
+        }
+        let mut s1 = String::new();
+        let mut s2 = String::new();
+        let mut flag = false;
+        for c in s.chars()
+        {
+            if !flag
+            {
+                s1.push(c);
+            }
+            else 
+            {
+                s2.push(c);
+            }
+            if c == ','
+            {
+               flag = true;
+            }
+        }
+
     }
 }
 
